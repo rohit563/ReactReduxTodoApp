@@ -5,17 +5,19 @@ const TodoList = ({list, removeTodo, handleCheckBoxChange}) => {
   return(
     <div className="flex-container">
       <div className="row">
+
           {list.map(todo => (
             <div className="flex-item" key={todo.id}>
+
             <div className="todoItem">
               <div
                 onClick={(e) => {e.preventDefault(); handleCheckBoxChange(todo.id);}}
-                style={ {
+                style={{
                   textDecoration: todo.completed ? 'line-through' : 'none'
                 }}
               >
-                <input type="checkbox" checked={todo.completed} />
-                {todo.text}
+              {todo.text}
+
               </div>
               <button className="deleteButton" onClick={(e) => { e.preventDefault(); removeTodo(todo.id);}}>x</button>
               </div>

@@ -3,7 +3,7 @@ $hl-color: #2196F3;
 $muted-color: mix(white, $bg-color, 70%);
 $trans-time: 300ms;
 $width: 320px;
-$themeColor: #FFFFFF;
+$themeColor: #699;
 $borderColor: #6b717f;
 
 
@@ -14,7 +14,7 @@ $borderColor: #6b717f;
 }
 
 body {
-  background: #ECEFF1;
+  background: #fff;
 }
 
 ul {
@@ -31,6 +31,10 @@ ul {
     height: 100%;
     padding-top: 3%;
     margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,32 +43,18 @@ ul {
     width: auto;
 }
 .flex-item {
-  border-radius: 4px;
-  background: #fff;
-  margin: 15px;
-  height: 50px;
-  width: 300px;
+    background-color: $themeColor;
+    width: 300px;
+    border: 0.5px solid $borderColor;
+    color: white;
+    text-align: center;
 }
 .todoItem {
   display: flex;
   justify-content: space-between;
 }
 .deleteButton {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background: #EF5350;
-  border-color: #F44336;
-  color: white;
-  height: 50px;
-  float: right;
+  background: #c69;
+  border-color: #c69;
 
-}
-
-.flex-item {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.flex-item:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
